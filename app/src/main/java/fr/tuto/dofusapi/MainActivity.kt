@@ -1,5 +1,6 @@
 package fr.tuto.dofusapi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -28,8 +29,8 @@ class MainActivity : AppCompatActivity(),CoroutineScope {
         val button = findViewById<Button>(R.id.btn_start)
         userName = findViewById(R.id.cpt_pseudo)
 
-        //Enlever le commentaire des que la class typeMonster a été crée
-      //  val intent : Intent = Intent(this, TypeMonsterActivity::class.java)
+
+        val intent : Intent = Intent(this, TypeMonsterActivity::class.java)
         button.setOnClickListener {
             val user = User(userName.text.toString())
             launch {

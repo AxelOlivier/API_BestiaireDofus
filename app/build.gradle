@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "fr.tuto.dofusapi"
+        applicationId 'fr.app.apiDofus'
         minSdk 21
         targetSdk 31
         versionCode 1
